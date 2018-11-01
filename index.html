@@ -2,14 +2,11 @@
 <head>
 	<title>Codebusters</title>
 	<source>
-		var x = document.getElementById("pre").innerHTML;
-		document.getElementById("post").innerHTML = x;
+		document.getElementById("post").innerHTML = document.getElementById("pre").innerHTML;
 	</source>
 </head>
 <body>
-	<form>
-		Original Text: <input type="text" name="pre" id="pre"><br>
-	</form>
+	Original Text: <input type="text" name="pre" id="pre"><br>
 	<p id="post">
 		
 	</p>
