@@ -2,11 +2,14 @@
 <head>
 	<title>Codebusters</title>
 	<script>
-		document.getElementById("post").innerHTML = document.getElementById("pre").innerHTML;
+		function convert() {
+			document.getElementById("post").innerHTML = document.getElementById("pre").innerHTML;
+		}
 	</script>
 </head>
 <body>
 	Original Text: <input type="text" name="pre" id="pre"><br>
+	<button onclick="convert()" id="btn">Convert</button>
 	<p id="post">
 		
 	</p>
