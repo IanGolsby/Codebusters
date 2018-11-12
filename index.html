@@ -2,15 +2,15 @@
 <head>
 	<title>Codebusters</title>
 	<script>
-		function convert() {
-			document.getElementById("post").textContent = document.getElementById("pre").innerText;
+		function convert(id) {
+			document.getElementById("post").innerText = id.innerText;
 		}
 	</script>
 </head>
 <body>
-	Original Text: <input type="text" name="pre" id="pre"><br>
-	<button onclick="convert()" id="btn">Convert</button>
-	<p>
-		<span id="post"></span>	
+	<input type="text" name="pre" id="pre" value="Original Text"><br>
+	<button onclick="convert(this)" id="btn">Convert</button>
+	<p id="post">
+		
 	</p>
 </body>
