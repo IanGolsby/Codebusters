@@ -3,14 +3,14 @@
 	<title>Codebusters</title>
 	<script>
 		function convert() {
-			document.getElementById("post").innerHTML = document.getElementById("pre").innerHTML;
+			document.getElementById("post").textContent = document.getElementById("pre").innerText;
 		}
 	</script>
 </head>
 <body>
 	Original Text: <input type="text" name="pre" id="pre"><br>
 	<button onclick="convert()" id="btn">Convert</button>
-	<p id="post">
-		
+	<p>
+		<span id="post"></span>	
 	</p>
 </body>
